@@ -1,0 +1,6 @@
+name: Server
+version: ${project.version}
+main: me.silver.server.Server
+api-version: 1.12.2
+authors: [Silver]
+description: My Server
