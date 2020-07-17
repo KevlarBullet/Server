@@ -1,11 +1,11 @@
-package me.silver.server.minigame;
+package me.silver.server.minigame.duel;
 
 import me.silver.server.util.PlayerHolder;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
-public class OneVOneMinigame implements BaseGame {
+public class DuelMinigame /*extends BaseGame*/ {
 
     private static final Location CHANGE_THIS_TO_A_CONFIG = new Location(Bukkit.getWorld("world"), 924, 112, 1222, 0, 20);
     private static final Location THIS_TOO = new Location(Bukkit.getWorld("world"), 924, 112, 1264, 180, 20);
@@ -16,7 +16,7 @@ public class OneVOneMinigame implements BaseGame {
     private final PlayerHolder p1Holder;
     private final PlayerHolder p2Holder;
 
-    public OneVOneMinigame(Player playerOne, Player playerTwo) {
+    public DuelMinigame(Player playerOne, Player playerTwo) {
         this.playerOne = playerOne;
         this.playerTwo = playerTwo;
 
